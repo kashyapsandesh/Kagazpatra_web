@@ -3,7 +3,6 @@ import "./App.css";
 import NavBar from "./components/navbar/NavBar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Footer from "./components/footers/Footer";
-import SubFooter from "./components/footers/SubFooter";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Context";
 import Service from "./Pages/Services/Service";
@@ -21,7 +20,7 @@ function App() {
           <Route path="/service" element={<Service/>} />
         </Routes>
         <Footer />
-        <SubFooter />
+        
       </BrowserRouter>
       {/* <Categories/> */}
     </>
