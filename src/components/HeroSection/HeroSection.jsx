@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import heroimage from '../../assets/heroimages.jpg'
+import Authentication from '../Authentication/Authentication_Login';
 
 function HeroSection() {
+  const [authenticate,setAuthenticate]=useState(false)
     const backgroundStyle = {
         backgroundImage: `url(${heroimage})`,
         backgroundSize: 'cover', // Set the background size to cover
@@ -18,7 +20,7 @@ function HeroSection() {
       };
   return (
     <div className="bg-white h-screen flex items-center justify-center" style={backgroundStyle } >
-  
+  {authenticate && <Authentication setAuthenticate={setAuthenticate}/>}
     <div className="relative isolate px-6 pt-14 lg:px-8" style={overlayStyle} >
     
       <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true"  >
