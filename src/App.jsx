@@ -7,6 +7,7 @@ import SubFooter from "./components/footers/SubFooter";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Context";
 import Service from "./Pages/Services/Service";
+// import Categories from "./components/Categories/Categories";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Footer />
         <SubFooter />
       </BrowserRouter>
+      {/* <Categories/> */}
     </>
   );
 }
