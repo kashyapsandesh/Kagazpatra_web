@@ -1,10 +1,11 @@
 
 import './App.css'
-import Footer from './components/navbar/Footer'
-import HeroSection from './components/navbar/HeroSection'
+import Footer from './components/footers/Footer'
+import HeroSection from './components/HeroSection/HeroSection'
 import NavBar from './components/navbar/NavBar'
-import TopNavBar from './components/navbar/TopNavBar'
-import Trusties from './components/navbar/trusties'
+import Trusties from './components/navbar/Trusties'
+
+
 
 
 
